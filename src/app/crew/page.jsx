@@ -63,7 +63,7 @@ const Crew = () => {
                 onClick={() => setMember("douglas")}
                 style={
                   member === "douglas"
-                    ? { backgroundColor: "white", scale: 1.2 }
+                    ? { backgroundColor: "white", scale: 1.3 }
                     : null
                 }
               ></span>
@@ -71,7 +71,7 @@ const Crew = () => {
                 onClick={() => setMember("anousheh")}
                 style={
                   member === "anousheh"
-                    ? { backgroundColor: "white", scale: 1.2 }
+                    ? { backgroundColor: "white", scale: 1.3 }
                     : null
                 }
               ></span>
@@ -79,7 +79,7 @@ const Crew = () => {
                 onClick={() => setMember("victor")}
                 style={
                   member === "victor"
-                    ? { backgroundColor: "white", scale: 1.2 }
+                    ? { backgroundColor: "white", scale: 1.3 }
                     : null
                 }
               ></span>
@@ -87,7 +87,7 @@ const Crew = () => {
                 onClick={() => setMember("mark")}
                 style={
                   member === "mark"
-                    ? { backgroundColor: "white", scale: 1.2 }
+                    ? { backgroundColor: "white", scale: 1.3 }
                     : null
                 }
               ></span>

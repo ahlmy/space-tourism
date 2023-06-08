@@ -119,6 +119,7 @@
     padding-top: 8rem;
     background-image: url("../../assets/technology/background-technology-tablet.jpg");
     flex-direction: column;
+    height: fit-content;
     gap: 4rem;
   }
   .info > h2 {
@@ -169,6 +170,7 @@
 @media screen and (max-width: 550px) {
   .technology {
     background-image: url("../../assets/technology/background-technology-mobile.jpg");
+    gap: 0;
   }
   .info > h1 {
     text-transform: uppercase;
@@ -179,5 +181,9 @@
   }
   .left > h2 {
     font-size: 1.2rem;
+  }
+  .nav > span {
+    width: 65px;
+    height: 65px;
   }
 }

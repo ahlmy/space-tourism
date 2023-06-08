@@ -11,6 +11,16 @@ const Navbar = () => {
   const dividerLink = useCallback(() => {
     return <Divider sx={{ borderColor: "white", borderWidth: "1px" }} />;
   }, []);
+  const openNav = () => {
+    linksRef.current.style.visibility = "visible";
+    linksRef.current.style.opacity = "1";
+    setIsHamburgerOpen(true);
+    return;
+  };
+  const closeNav = () => {
+    linksRef.current.removeAttribute("style");
+    setIsHamburgerOpen(false);
+  };
   const pathName = usePathname();
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
   const linksRef = useRef();
@@ -28,25 +38,45 @@ const Navbar = () => {
       </div>
       <div className={styles.links} ref={linksRef} mobile="">
         <div>
-          <Link className={styles.link} href={"/"} data-number="00">
+          <Link
+            className={styles.link}
+            href={"/"}
+            onClick={() => (isHamburgerOpen ? closeNav() : "")}
+            data-number="00"
+          >
             Home
           </Link>
           {pathName === "/" ? dividerLink() : ""}
         </div>
         <div>
-          <Link className={styles.link} href={"/destination"} data-number="01">
+          <Link
+            className={styles.link}
+            href={"/destination"}
+            onClick={() => (isHamburgerOpen ? closeNav() : "")}
+            data-number="01"
+          >
             Destination
           </Link>
           {pathName === "/destination" ? dividerLink() : ""}
         </div>
         <div>
-          <Link className={styles.link} href={"/crew"} data-number="02">
+          <Link
+            className={styles.link}
+            href={"/crew"}
+            onClick={() => (isHamburgerOpen ? closeNav() : "")}
+            data-number="02"
+          >
             crew
           </Link>
           {pathName === "/crew" ? dividerLink() : ""}
         </div>
         <div>
-          <Link className={styles.link} href={"/technology"} data-number="03">
+          <Link
+            className={styles.link}
+            href={"/technology"}
+            onClick={() => (isHamburgerOpen ? closeNav() : "")}
+            data-number="03"
+          >
             technology
           </Link>
           {pathName === "/technology" ? dividerLink() : ""}
@@ -56,12 +86,9 @@ const Navbar = () => {
         className={styles.hamburger}
         onClick={() => {
           if (isHamburgerOpen) {
-            linksRef.current.removeAttribute("style");
-            setIsHamburgerOpen(false);
+            closeNav();
           } else if (!isHamburgerOpen) {
-            linksRef.current.style.visibility = "visible";
-            linksRef.current.style.opacity = "1";
-            setIsHamburgerOpen(true);
+            openNav();
           }
         }}
       >

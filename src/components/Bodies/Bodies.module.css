@@ -31,10 +31,10 @@
   flex-direction: column;
   gap: 1.5rem;
 }
-
+/* 
 .info > p {
   height: 5rem;
-}
+} */
 
 .infotitle {
   font-size: 6rem;
@@ -55,6 +55,7 @@
     font-size: 5rem;
   }
   .bodies {
+    justify-content: space-evenly;
     gap: 1.2rem;
     align-self: center;
     width: 100%;

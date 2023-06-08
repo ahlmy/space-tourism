@@ -112,6 +112,9 @@
   .title {
     font-size: 1.6rem;
   }
+  .nav {
+    gap: 2rem;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -121,5 +124,8 @@
   .right > img {
     width: fit-content;
     height: auto;
+  }
+  .nav {
+    justify-content: space-evenly;
   }
 }
