@@ -41,12 +41,11 @@ const techInfo = {
   },
 };
 
-const media = window.matchMedia("(max-width: 800px");
-
 const Technology = () => {
   const [tech, setTech] = useState("vehicle");
   const [mobile, setMobile] = useState();
   useEffect(() => {
+    const media = window.matchMedia("(max-width: 800px");
     media.addEventListener("change", (e) => {
       e.matches ? setMobile(true) : setMobile(false);
     });
