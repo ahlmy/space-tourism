@@ -30,6 +30,19 @@
   gap: 4rem;
 }
 
+.left > img {
+  animation: rotateBody 3s ease 0s infinite alternate;
+}
+
+@keyframes rotateBody {
+  from {
+    rotate: -3deg;
+  }
+  to {
+    rotate: 3deg;
+  }
+}
+
 .left > h2::before {
   content: "01 ";
   color: gray;
