@@ -1,6 +1,7 @@
 :root {
   --text-primary: #fff;
   --text-dark: black;
+  --text-faint: rgb(165, 165, 165);
 }
 
 * {
@@ -12,7 +13,6 @@
 body {
   color: var(--text-primary);
   background-color: rgb(20, 20, 20);
-  /* min-height: min-content; */
 }
 
 main {

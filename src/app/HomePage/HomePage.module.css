@@ -39,6 +39,8 @@
 .btn {
   flex: 1;
   text-align: center;
+  align-self: flex-end;
+  margin-bottom: 4rem;
 }
 
 @media screen and (max-width: 800px) {
@@ -48,6 +50,19 @@
     background-image: url("../../assets/home/background-home-tablet.jpg");
     gap: 2rem;
   }
+  .btn {
+    align-self: center;
+  }
+  .desc > h1 {
+    font-size: 5rem;
+  }
+  .desc > h2 {
+    font-size: 0.9rem;
+  }
+  .desc > p {
+    font-size: 0.9rem;
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -55,5 +70,14 @@
     padding-top: 30%;
     background-image: url("../../assets//home/background-home-mobile.jpg");
     gap: 1.5rem;
+  }
+  .desc > h1 {
+    font-size: 4.5rem;
+  }
+  .desc > h2 {
+    font-size: 0.8rem;
+  }
+  .desc > p {
+    font-size: 0.8rem;
   }
 }
