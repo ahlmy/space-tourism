@@ -31,15 +31,18 @@
 }
 
 .left > img {
-  animation: rotateBody 6s ease 0s infinite alternate;
+  animation: rotateBody 10s ease-in-out 0s infinite;
 }
 
 @keyframes rotateBody {
   from {
     rotate: -3deg;
   }
-  to {
+  50% {
     rotate: 3deg;
+  }
+  to {
+    rotate: -3deg;
   }
 }
 
