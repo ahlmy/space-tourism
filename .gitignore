@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-space-tourism-website-main
+/space-tourism-website-main
 
 # testing
 /coverage

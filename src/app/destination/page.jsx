@@ -5,11 +5,6 @@ import Image from "next/image";
 import { Bodies } from "@/components";
 import { useState } from "react";
 
-export const metadata = {
-  title: "Space Tourism | Destination",
-  description: "Destinations for space tourism",
-};
-
 const bodyInfos = {
   moon: {
     title: "moon",

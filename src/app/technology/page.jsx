@@ -1,10 +1,5 @@
 import styles from "./technology.module.css";
 
-export const metadata = {
-  title: "Space Tourism | Technology",
-  description: "What technologies are used in space tourism",
-};
-
 const Technology = () => {
   return (
     <main>

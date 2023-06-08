@@ -8,7 +8,7 @@ const Loading = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        minHeight: "900px",
+        minHeight: "700px",
         height: "100vh",
         color: "black",
       }}

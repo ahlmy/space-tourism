@@ -1,20 +1,6 @@
-"use client";
-import { ScaleLoader } from "react-spinners";
+import { Loading } from "@/components";
 
-const Loading = () => {
-  return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "900px",
-        height: "100vh",
-        color: "black",
-      }}
-    >
-      <ScaleLoader color="white" loading={true} />
-    </div>
-  );
+const loading = () => {
+  return <Loading />;
 };
-export default Loading;
+export default loading;
